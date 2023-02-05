@@ -283,7 +283,7 @@ export const themeSettings = (mode) => {
             },
         },
         settings: {
-            containerWidth: "md",
+            containerWidth: "lg",
         },
     }
 }

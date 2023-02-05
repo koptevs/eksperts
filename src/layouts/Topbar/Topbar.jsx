@@ -85,9 +85,9 @@ function Topbar(props) {
                 sx={{ ml: 2, color: "inherit" }}
             >
                 {theme.palette.mode === "dark" ? (
-                    <DarkModeOutlinedIcon />
-                ) : (
                     <LightModeOutlinedIcon />
+                ) : (
+                    <DarkModeOutlinedIcon />
                 )}
             </IconButton>
         </Box>
@@ -133,9 +133,9 @@ function Topbar(props) {
                                 sx={{ ml: 2, color: "inherit" }}
                             >
                                 {theme.palette.mode === "dark" ? (
-                                    <DarkModeOutlinedIcon />
-                                ) : (
                                     <LightModeOutlinedIcon />
+                                ) : (
+                                    <DarkModeOutlinedIcon />
                                 )}
                             </IconButton>
                         </Box>

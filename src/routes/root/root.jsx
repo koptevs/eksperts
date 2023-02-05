@@ -16,6 +16,7 @@ import Button from "@mui/material/Button"
 import { ColorModeContext, useMode } from "../../theme"
 
 import { Topbar, Sidebar } from "../../layouts"
+import "../../index.css"
 
 const Root = () => {
     const [theme, colorMode] = useMode()
