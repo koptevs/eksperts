@@ -26,12 +26,12 @@ const Root = () => {
                 <CssBaseline />
                 <div className="app">
                     <main className="content">
-                        <Container maxWidth={theme.settings.containerWidth}>
-                            <Topbar />
-                            <h1>Root</h1>
-                            <Outlet />
-                            <Sidebar />
-                        </Container>
+                        {/* <Container maxWidth={theme.settings.containerWidth}> */}
+                        <Topbar />
+                        {/* <h1>Root</h1> */}
+                        <Outlet />
+                        <Sidebar />
+                        {/* </Container> */}
                     </main>
                 </div>
             </ThemeProvider>
