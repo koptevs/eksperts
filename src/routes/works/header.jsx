@@ -10,7 +10,8 @@ import {
     Image,
 } from "@react-pdf/renderer"
 
-import { fontSans, fontSansBold } from "./variables"
+import { fontSans, fontSansBold, registerFonts } from "./variables"
+registerFonts(Font)
 
 const styles = StyleSheet.create({
     header: {
@@ -18,8 +19,9 @@ const styles = StyleSheet.create({
         height: "2cm",
         display: "flex",
         flexDirection: "row",
-        border: "1px solid black",
-        borderBottom: "1px solid black",
+        // border: "1px solid black",
+        borderBottom: "0.8mm solid black",
+        marginBottom: "1mm",
     },
     header__col1: {
         // backgroundColor: "green",
@@ -32,8 +34,8 @@ const styles = StyleSheet.create({
         flex: 1,
         // backgroundColor: "yellow",
         textAlign: "center",
-        padding: "1mm",
-        borderBottom: "1px solid blue",
+        paddingBottom: "0.3mm",
+        borderBottom: "0.8mm solid rgb(44, 123, 178)",
     },
     header__col1__top_top: {
         fontFamily: fontSansBold,

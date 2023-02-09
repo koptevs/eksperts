@@ -13,9 +13,9 @@ import {
 } from "@react-pdf/renderer"
 
 import { fontSans, fontSansBold, registerFonts } from "./variables"
+registerFonts(Font)
 import Header from "./header"
 import Meta from "./meta"
-registerFonts(Font)
 
 // Create styles
 const styles = StyleSheet.create({
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#ffffff",
         color: "black",
         padding: "1cm",
-        paddingTop: "2cm",
+        paddingTop: "1cm",
         flexDirection: "column",
     },
     viewer: {
@@ -80,7 +80,7 @@ function Works() {
             <Document>
                 <Page size="A4" style={styles.page}>
                     <Header />
-                    <View style={styles.gap}></View>
+                    {/* <View style={styles.gap}></View> */}
                     <Meta />
                 </Page>
             </Document>
